@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Raleway:wght@100;200;300;500;600;700&family=Roboto:wght@300&display=swap');
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+html ::-webkit-scrollbar{
+    width: 10px;
+    background-color: #191919;
+}
+html ::-webkit-scrollbar-track{
+    background-color: #191919;
+}
+html ::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: #242424;
+
+}
+
+body{
+    background-color: #191919;
+    width: 100%;
+}
+
+section{
+    padding: 35px 8%;
+}
+
+/* Nav Bar  */
+.header a img{
+    width: 160px;
+    height: 85px;
+    
+}
+.header a img:hover{
+    width: 180px;
+    height: 100px;
+}
+.header{
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    margin: 10px 15%;
+    border-radius: 70px;
+    box-shadow: 15px 15px 13px 10px rgba(82, 82, 82, 0.1);
+    position: sticky;
+    top: 15px;
+    z-index: 1000;
+}
+.header .navbar a{
+    margin: 0 12px;
+    font-size: 17px;
+    color: #242424;
+    border-bottom: 2px solid transparent;
+}
+.header .navbar .active,
+.header .navbar a:hover{
+    border-color: #242424;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+/* Ana Sayfa */
+
+.Sayfa1{
+    width: 100%;
+    height: 100vh;
+    background: url(./img/2614333.jpg) no-repeat;
+    background-size: cover ;
+    margin-top: -80px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Sayfa1 .content{ 
+    position: relative;
+    display: auto;
+    text-align: center;
+    align-items: center;
+    margin-left: 240px;
+}
+.Sayfa1 .content h1{
+    font-size: 70px;
+    font-weight: 900px;
+    color: lightgray;
+}
+.Sayfa1 .content p{
+    color: lightgray;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 18px;
+    padding: 5pxpx;
+}
+.Sayfa1 .content .btn{
+    margin-top: 10px;
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 17px;
+    background-color: #242424;
+    color: lightgray;
+    cursor: pointer;
+}
+.Sayfa1 .content .btn:hover{
+    color: #242424;
+    background-color: lightgray;
+    font-size: 18px;
+    border-radius: 35px;
+    padding: 7.5px 25px;
+}
+
+/* yetenekler sayfası */
+.yetenekler .kutu-container-yetenekler{
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.yetenekler h1{
+    font-weight: 700;
+    font-size: 50px;
+    color: lightgray;
+}
+.yetenekler .cizgi{
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 1px;
+    margin-top: 7px;
+}
+.kutu-container-yetenekler .kutu-yetenekler{
+    margin-left: 18px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #242424;
+    box-shadow: 0px 0px 20px -10px lightgray;
+    border-radius: 50px;
+    width: 300px;
+    height: 120px;
+    color: white;
+    
+
+}
+.kutu-container-yetenekler .kutu-yetenekler:hover{
+    background-color: white;
+    color: #191919
+}
+.fa-brands{
+    font-size: 40px;
+    margin-left: 20px;
+}
+.kutu-container-yetenekler .kutu-yetenekler .kutuBaslik{
+    margin-left: 20px;
+}
+/* Framework Sayfası  */
+
+.framework .kutu-container-framework{
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.framework h1{
+    font-weight: 700;
+    font-size: 50px;
+    color: lightgray;
+}
+.framework .cizgi{
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 1px;
+    margin-top: 7px;
+}
+.kutu-container-framework .kutu-framework{
+    margin-left: 18px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #242424;
+    box-shadow: 0px 0px 20px -10px lightgray;
+    border-radius: 50px;
+    width: 300px;
+    height: 120px;
+    color: white;
+
+}
+.kutu-container-framework .kutu-framework:hover{
+    background-color: white;
+    color: #191919
+}
+.fa-brands{
+    font-size: 40px;
+    margin-left: 20px;
+}
+.kutu-container-framework .kutu-framework .kutuBaslik{
+    margin-left: 20px;
+}
+
+/* HAKKIMDA SAYFASI */
+
+.hakkımda .container-hakkımda{
+    text-overflow:ellipsis;
+    gap: 8%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+
+}
+.hakkımda .container-hakkımda .resim img{
+    width: 100%;
+    height: 100%;
+}
+.mtn-hakkımda h1{
+    font-weight: 700;
+    font-size: 70px;
+    color: white;
+}
+.mtn-hakkımda h2{
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+}
+.mtn-hakkımda p{
+    margin-top: 3px;
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+}
+.mtn-hakkımda .fa-brands{
+    gap: 3%;
+    margin-top: 3%;
+    font-size: 35px;
+    color: white;
+}
+/* İletişim Sayfası */
+
+.container-iletisim{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15%;
+    margin-top: -8%;
+}
+
+iframe{
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+}
+.iltsm{
+    color: lightgrey;
+    font-weight: 700;
+    font-size: 45px;
+}
+a{
+    align-items: center;
+}
+.e-mail{
+    color: lightgray;
+    margin-left: 20px;
+    padding:7px;
+    font-size: 18px;
+}
+.etiket{
+    margin-top: 5px;
+    gap: 10px;
+    padding: 7px;
+    font-size: 16px;
+    display: flex;
+    color: lightgray;
+}
+.mtn-iletisim .cizgi{
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 1px;
+    margin-top: 7px;
+}
+
+/* projeler sayfası */
+.container-projeler{
+    padding: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.proje div{
+    display: flex;
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid;
+}
+.projeler h1{
+    color: lightgray;
+    font-size: 25px;
+    font-weight:700px;
+    
+}
+.projeler a{
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+}
+.projeler a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.projeler a img:hover{
+    width: 360px;
+    height: 210px;
+    border-radius: 20px;
+}
+.projeler .cizgi{
+    margin: 10px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 416px) {
+    img{
+        display: none;
+    }
+    .navbar{
+        text-align: center;
+        line-height:26px;
+    }
+    .Sayfa1 .content{
+        align-items: center;
+        margin-left: 0px;
+    }
+    .hakkımda h1{
+        font-size: 65px;
+        margin-top: 10%;
+    }
+    .iletisim{
+        padding: 1%;
+        margin-top: 20%;
+    }
+    .content{
+        width: 330px;
+        height: 220px;
+        
+    }
+    .content h1{
+        font-size: 50px;
+        
+  }
+  .Sayfa1{
+    padding: 5%;
+  }
+  .framework h1{
+    font-size:40px;
+  }
+}
